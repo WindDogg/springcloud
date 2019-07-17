@@ -9,6 +9,9 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>eureka-server</module>
+    <module>product-data-service</module>
+    <module>product-view-service-ribbon</module>
+    <module>product-view-service-feigns</module>
   </modules>
 
   <name>springcloud</name>
