@@ -10,6 +10,8 @@ spring:
     encoding: UTF-8
     mode: HTML5
 
+feign.hystrix.enabled: true
+
 management:
   endpoints:
     web:
