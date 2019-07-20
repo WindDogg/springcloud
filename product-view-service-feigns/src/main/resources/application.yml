@@ -9,3 +9,12 @@ spring:
     suffix: .html
     encoding: UTF-8
     mode: HTML5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"

@@ -26,6 +26,13 @@ public class App
 {
     public static void main( String[] args )
     {
+        //判断rabbitMQPort是否启动
+        int rabbitMQPort = 5672;
+        if (NetUtil.isUsableLocalPort(rabbitMQPort)){
+            System.out.printf("未在端口%d,发现rabbitMQ服务启动",rabbitMQPort);
+            System.exit(1);
+        }
+
         int port =0 ;
         int defaultPort = 8012;
         Future<Integer> future = ThreadUtil.execAsync(() ->{
