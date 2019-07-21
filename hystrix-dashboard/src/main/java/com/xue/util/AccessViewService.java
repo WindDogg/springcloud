@@ -7,12 +7,8 @@ public class AccessViewService {
     public static void main(String[] args) {
         while (true){
             ThreadUtil.sleep(1000);
-            try{
-                String html =HttpUtil.get("http://127.0.0.1:8012/products");
-                System.out.println("html length:"+html.length());
-            }catch (Exception e){
-                System.err.println(e.getMessage());
-            }
+            access(8012);
+            access(8013);
 
         }
     }
