@@ -13,9 +13,9 @@
     <module>product-view-service-ribbon</module>
     <module>product-view-service-feigns</module>
     <module>server-config</module>
-      <module>hystrix-dashboard</module>
-      <module>turbine</module>
-      <module>zuul</module>
+    <module>hystrix-dashboard</module>
+    <module>turbine</module>
+    <module>zuul</module>
   </modules>
 
   <name>springcloud</name>
